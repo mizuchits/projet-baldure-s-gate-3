@@ -1,0 +1,423 @@
+@font-face {
+    font-family: "MedievalSharp Regular";
+    src: url(../fonts/MedievalSharp/MedievalSharp-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gothic Regular";
+    src: url(../fonts/Gothic_A1/GothicA1-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gothic Bold";
+    src: url(../fonts/Gothic_A1/GothicA1-Bold.ttf);
+}
+
+.gothic-regular {
+    font-family: "Gothic Regular";
+}
+
+.medievalsharp-regular {
+    font-family: "MedievalSharp Regular";
+}
+
+.gothic-bold {
+    font-family: "Gothic Bold";
+}
+
+.golden {
+    color: #C7A480
+}
+
+body {
+    margin: 0;
+    background-image: url("../img/smoke-bg.jpg");
+    background-attachment: fixed;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.margin {
+    margin: auto 10%;
+}
+
+p {
+    color: white;
+    font-family: sans-serif;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1000;
+    overflow: visible;
+    background-image: url(../img/cloud-header.png);
+    background-position: right;
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+
+header img {
+    height: 50px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 35%;
+    margin: 6px 5%;
+}
+
+.header-container {
+    display: flex;
+    padding-top: 15px;
+}
+
+.header-container a {
+    padding: 0 5px;
+    color: #C7A480;
+}
+
+header .btn {
+    background-color: #C7A480;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+}
+
+.accueil {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.accueil-content {
+    position: absolute;
+    color: #C7A480;
+    text-align: center;
+}
+
+.btn-content {
+    background-color: #0d0f1579;
+    backdrop-filter: blur(20px);
+    border: 1px solid #C7A480;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-content:hover {
+    background-color: #C7A480;
+}
+
+.btn-container {
+    padding: 15px 20px;
+    margin-bottom: 50px;
+}
+
+.accueil-content a {
+    color: white;
+    font-size: 2em;
+}
+
+.accueil-content h1 {
+    font-size: 3em;
+}
+
+.award {
+    display: block;
+    border: 2px solid #C7A480;
+    object-fit: cover;
+    margin: 5% 20%;
+    border-radius: 10px;
+}
+
+.award .award-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-image: url(../img/awards-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 25px;
+}
+
+.award-img {
+    width: 20%;
+}
+
+.award-container h2 {
+    color: #C7A480;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.award-container p {
+    margin-bottom: 0;
+    margin-top: 30%;
+}
+
+.race-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    border: 2px solid #C7A480;
+    border-radius: 5px;
+    padding: 3%;
+}
+
+.race-content img {
+    height: 100px;
+}
+
+.race-container div {
+    flex: 0 0 calc(33, 333% - 20px);
+}
+
+.race-content div {
+    transition: all 0.3s ease;
+}
+
+.race-content div:hover {
+    border: 1px solid #C29A76;
+    border-radius: 5px;
+}
+
+.race-content {
+    background-image: url(../img/races-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 43%;
+    padding: 4vw 12vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.race-detail {
+    padding: 1vw 6vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.race-detail img {
+    height: 94px;
+}
+
+.race-detail-line {
+    position: relative;
+    border-bottom: solid 1px #C7A480;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.race-detail-line::before {
+    content: url(../svg/decoration-line--before.svg);
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-40%);
+    width: 20px;
+    height: 30px;
+    display: block;
+}
+
+.race-title {
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+.race-desc {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.race-desc-container {
+    border-bottom: 2px solid #C7A480;
+    padding-bottom: 1vh;
+}
+
+.buy {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/buy-now-background.jpg);
+    padding: 5%;
+}
+
+.buy img {
+    height: 500px;
+}
+
+.buy-container {
+    display: flex;
+    padding: 0;
+}
+
+.buy-container a {
+    color: white;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h3 {
+    color: #C29A76;
+}
+
+.update {
+    margin: 40px 10%;
+}
+
+.update-card {
+    position: relative;
+    max-width: 22vw;
+    height: 35vh;
+    transition: all 0.3s ease;
+}
+
+.update-container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+}
+
+.first-card {
+    background-image: url(../img/news-1.jpg);
+    background-size: cover;
+}
+
+.second-card {
+    background-image: url(../img/news-2.jpg);
+    background-size: cover;
+}
+
+.third-card {
+    background-image: url(../img/news-3.jpg);
+    background-size: cover;
+}
+
+
+.update-after:after {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.507);
+}
+
+.update-after:hover:after {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+.gallery {
+    margin: 40px 10%;
+    text-align: end;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+}
+
+.gallery-card img {
+    width: 16vw;
+    height: 40vh;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.download {
+    margin: 200px 20%;
+}
+
+.download-container {
+    border: 2px solid #C7A480;
+    border-radius: 5px;
+    padding: 5% 51% 10% 4%;
+    background-image: url(../img/cta-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.download-container p {
+    margin-bottom: 30px;
+}
+
+.download-container a {
+    color: white;
+}
+
+footer {
+    margin: 40px 10%;
+}
+
+.footer-container {
+    border-bottom: 2px solid #C7A480;
+    border-top: 2px solid #C7A480;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0;
+}
+
+footer ul {
+    padding: 0;
+    line-height: 35px;
+}
+
+.legal {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-container a {
+    color: #C29A76;
+}
+
+.legal a {
+    color: white;
+}
