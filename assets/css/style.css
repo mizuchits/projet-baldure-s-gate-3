@@ -317,7 +317,6 @@ h3 {
 .update-card {
     position: relative;
     max-width: 22vw;
-    height: 35vh;
     transition: all 0.3s ease;
 }
 
@@ -325,6 +324,11 @@ h3 {
     display: flex;
     gap: 40px;
     justify-content: space-evenly;
+}
+
+.update-container a {
+    display: inline-block;
+
 }
 
 .first-card {
@@ -344,6 +348,9 @@ h3 {
 
 
 .update-after:after {
+    content: "";
+    top: 0;
+    left: 0;
     position: absolute;
     background: rgba(0, 0, 0, 0.507);
 }
