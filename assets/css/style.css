@@ -317,7 +317,12 @@ h3 {
 .update-card {
     position: relative;
     max-width: 22vw;
-    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.update-card>* {
+    position: relative;
+    z-index: 1;
 }
 
 .update-container {
@@ -352,7 +357,10 @@ h3 {
     top: 0;
     left: 0;
     position: absolute;
+    height: 100%;
+    width: 100%;
     background: rgba(0, 0, 0, 0.507);
+    transition: all 0.3s ease;
 }
 
 .update-after:hover:after {
@@ -363,6 +371,11 @@ h3 {
 .gallery {
     margin: 40px 10%;
     text-align: end;
+}
+
+.gallery-card>* {
+    position: relative;
+    z-index: 1;
 }
 
 .gallery-container {
