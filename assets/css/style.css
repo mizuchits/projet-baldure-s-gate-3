@@ -373,9 +373,9 @@ h3 {
     text-align: end;
 }
 
-.gallery-card>* {
-    position: relative;
-    z-index: 1;
+.gallery-card img:hover {
+    filter: brightness(100%);
+    border: 1px solid #C29A76;
 }
 
 .gallery-container {
@@ -385,10 +385,12 @@ h3 {
 }
 
 .gallery-card img {
-    width: 16vw;
+    width: 19vw;
     height: 40vh;
     border-radius: 5px;
     object-fit: cover;
+    filter: brightness(50%);
+    transition: all 0.3s ease;
 }
 
 .download {
